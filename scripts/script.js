@@ -1,17 +1,7 @@
+//getting the values of the input field for city name
 var cityInput = document.getElementById("searchCity");
 
-var backgroundsList = [
-  "day1.jpg",
-  "day2.jpg",
-  "day3.jpg",
-  "day4.jpg",
-  "day5.jpg",
-  "cloudy1.jpg",
-  "cloudy2.jpg",
-  "cloudy3.jpg",
-  "cloudy4.jpg",
-  "cloudy5.jpg",
-];
+var backgroundsList = [];
 
 var randomBackground =
   backgroundsList[Math.floor(Math.random() * backgroundsList.length)];
@@ -52,8 +42,7 @@ cityInput.addEventListener("keyup", function (event) {
 
     var cityInputValue = cityInput.value;
 
-    var apiKey = "fd116844937800b5eb49b16ccb170629"; // This key generated
-
+    var apiKey = "fd116844937800b5eb49b16ccb170629"; // This key generated from openweathermap.org
     var unit = "metric";
     var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityInputValue}&appid=${apiKey}&units=${unit}`;
 
@@ -105,7 +94,6 @@ cityInput.addEventListener("keyup", function (event) {
           document.getElementById("weatherType").innerHTML = "";
         }
       }
-
       getWeather();
     } else
       document.getElementById("locationName").innerHTML =

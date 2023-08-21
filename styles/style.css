@@ -101,18 +101,18 @@ ul {
   color: #fff;
 }
 
-.additionals-first-row,
-.additionals-second-row {
+.first-row,
+.second-row {
   font-size: 20px;
   width: 100%;
   text-align: center;
 }
 
-.additionals-first-row {
+.first-row {
   margin-bottom: 20px;
 }
 
-.additionals-second-row {
+.second-row {
   margin-top: 12.5px;
 }
 
