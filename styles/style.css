@@ -20,10 +20,12 @@
 }
 
 .navbar {
-  background: rgba(0, 0, 0, 0.375);
-  text-align: right;
+  background: rgba(255, 181, 0, 1);
   opacity: 100%;
   transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ul {
@@ -57,9 +59,9 @@ ul {
 .search-city {
   letter-spacing: 0.5px;
   padding-left: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  background: #fff;
   border: none;
-  color: #fff;
+  color: black;
   border-radius: 50px;
   outline: none;
 }
@@ -70,10 +72,10 @@ ul {
   border-radius: 5px;
 }
 
-.location-name {
-  font-weight: 400;
+.city-name {
   text-align: center;
   color: #fff;
+  margin: 24px 0;
 }
 
 .temperature-container {
@@ -83,7 +85,7 @@ ul {
 }
 
 .temperature-icon {
-  margin-bottom: -15px;
+  margin-bottom: 30px;
   padding: 0;
 }
 
@@ -94,20 +96,20 @@ ul {
 }
 
 .weather-type {
-  font-weight: 400;
+  margin: 24px;
   text-align: center;
   color: #fff;
 }
 
 .additionals-first-row,
 .additionals-second-row {
-  font-size: 12.5px;
+  font-size: 20px;
   width: 100%;
   text-align: center;
 }
 
 .additionals-first-row {
-  margin-bottom: 12.5px;
+  margin-bottom: 20px;
 }
 
 .additionals-second-row {
